@@ -1,4 +1,4 @@
-importScripts("/wine-push-poc/precache-manifest.b17fafa6ff82dc63005bc9b0b3e4310b.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/wine-push-poc/precache-manifest.0ab8788d9933925f2357db686c313e77.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 workbox.routing.registerRoute(
   /\.(?:js|css|html)$/,

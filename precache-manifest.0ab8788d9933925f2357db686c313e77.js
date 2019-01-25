@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/wine-push-poc/js/chunk-vendors.256e0553.js"
   },
   {
-    "revision": "2c163ebc2a10ca0175ea",
-    "url": "/wine-push-poc/js/app.5c50cecb.js"
+    "revision": "72d213c1cdf6bfdfa88f",
+    "url": "/wine-push-poc/js/app.ba01a71d.js"
   },
   {
-    "revision": "89f61c7c31dfe73034e37dee56dbd099",
+    "revision": "1b7b300d281d8a77a6f9a21be58e1bec",
     "url": "/wine-push-poc/index.html"
   },
   {
-    "revision": "2c163ebc2a10ca0175ea",
+    "revision": "72d213c1cdf6bfdfa88f",
     "url": "/wine-push-poc/css/app.66b35d51.css"
   }
 ];

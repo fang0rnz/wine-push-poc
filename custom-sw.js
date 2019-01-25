@@ -49,3 +49,9 @@ function showLocalNotification(title, body, swRegistration) {
   swRegistration.showNotification(title, options);
 }
 
+workbox.core.setCacheNameDetails({ prefix: 'heliowiki' });
+
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+

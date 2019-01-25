@@ -1,0 +1,20 @@
+<template>
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+</template>
+
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default {
+  name: "app",
+  components: {
+    HelloWorld
+  }
+};
+</script>
+
+<style>
+* {
+  background-color: #FFDB61;
+}
+</style>

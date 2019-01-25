@@ -1,3 +1,10 @@
+workbox.routing.registerRoute(
+  /\.(?:js|css|html)$/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'static-resources'
+  })
+);
+
 // urlB64ToUint8Array is a magic function that will encode the base64 public key
 // to Array buffer which is needed by the subscription option
 const urlB64ToUint8Array = base64String => {
@@ -21,11 +28,13 @@ self.addEventListener('activate', async () => {
     );
     const options = { applicationServerKey, userVisibleOnly: true };
     const subscription = await self.registration.pushManager.subscribe(options);
-    await fetch('https://journal-9fa6s1jwq.now.sh', {
+    console.log(subscription);
+    const res = await fetch('https://journal-9fa6s1jwq.now.sh', {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(subscription)
     });
+    console.log(res);
   } catch (err) {
     console.log('Error', err);
   }

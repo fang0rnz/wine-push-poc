@@ -1,4 +1,4 @@
-importScripts("/wine-push-poc/precache-manifest.40b046a3029004c6c0adad81b9aa0d0f.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("precache-manifest.0d49516f178dede510906b058d0f1fc6.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 // urlB64ToUint8Array is a magic function that will encode the base64 public key
 // to Array buffer which is needed by the subscription option

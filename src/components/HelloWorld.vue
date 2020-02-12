@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <h1 class="title">Wine push notifications POC</h1>
-    <span class="wine-glass" role="img">🍷</span>
+    <h1 class="title">Piña colada push notifications POC</h1>
+    <span class="wine-glass" role="img">🍹</span>
   </div>
 </template>
 

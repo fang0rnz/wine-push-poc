@@ -1,4 +1,4 @@
-importScripts("/wine-push-poc/precache-manifest.0ab8788d9933925f2357db686c313e77.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/pinacolada-push-poc/precache-manifest.515e8b3f07ef9a97ffc2a1a24d8be3ea.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 workbox.routing.registerRoute(
   /\.(?:js|css|html)$/,
@@ -30,11 +30,13 @@ self.addEventListener('activate', async () => {
     );
     const options = { applicationServerKey, userVisibleOnly: true };
     const subscription = await self.registration.pushManager.subscribe(options);
-    await fetch('https://journal-9fa6s1jwq.now.sh', {
+    console.log(subscription);
+    const res = await fetch('https://journal-9fa6s1jwq.now.sh', {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(subscription)
     });
+    console.log(res);
   } catch (err) {
     console.log('Error', err);
   }
